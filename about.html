@@ -25,10 +25,9 @@
 			.feature-inner { margin:0 auto;padding:10px;width:970px;background:#d3d3f9;}
 			.feature-inner h1 {color:darkblue;font-size:28px; text-align:justify; padding:0 13px;}
 			
-			.important-inner { margin:0 auto;padding:1px;width:700px;background:#d3d3f9; border-bottom-right-radius:15px;border-bottom-left-radius:15px; border-top-right-radius:15px;border-top-left-radius:15px;}
-			
+			.important-inner { margin:0 auto;padding:1px;width:600px;background:#d3d3f9; border-bottom-right-radius:15px;border-bottom-left-radius:15px; border-top-right-radius:15px;border-top-left-radius:15px;}
 			.important-inner h1 {color: darkblue; font-size:22px; text-align:center; padding:0 13px;}
-
+			
 			/* Menu */
 			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
 			#top-nav ul { list-style:none; padding:0; height:37px; float:left;}
@@ -38,7 +37,7 @@
 			
 			/* Content */
 			#content-inner { margin:0 auto; padding:10px; width:970px;background:#fff;}
-			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
+			#content #contentbar { margin:10; padding:0; float:right; width:760px;}
 			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
 			#content #sidebar { padding:0; float:left; width:200px;}
 			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
@@ -65,9 +64,11 @@
             /* Image */
 
             img { display: block; }
-            .img2 { display: block; width: 96%; height: 45%; box-shadow: 0px 0px 45px grey;}
-            .pq { font-size: 20px; font-style: italic;  text-align: center; }
+            .img2 {  width:200px; height:200px; border-radius: 50%; }
+            .pq { font-size: 20px; font-style: italic;  text-align: center;}
+			.pi { font-size: 20px; font-style: italic;  text-align: center;}
             .pw { font-size: 20px; text-align: center; }
+			.pu { font-size: 35px; text-align: center; font-weight: bold;}
 
 			@font-face {
 				font-family: poppins;
@@ -78,7 +79,31 @@
 				font-family: poppins;
 				font-size: 35px;
 			}
-			
+
+			.container {
+				border-radius: 15px;
+				background-color: #f2f2f2;
+				padding: 15px;
+			}
+
+			.container2 {
+				border-radius: 10px;
+				background-color: white;
+				padding: 10px;
+			}
+
+			.decorationcontainer {
+				border-radius: 15px;
+				background-color: #d8d8d8;
+				padding: 15px;
+			}
+
+			.decorationcontainer2 {
+				border-radius: 15px;
+				background-color: #d8d8d8;
+				padding: 7.5px;
+			}
+
 			/* Footer */
 			#footer { background:#eee;}
 			#footer-inner { margin:auto; text-align:center; padding:12px; width:970px;}
@@ -90,32 +115,90 @@
 	<body>
 		<div id="page">
 			<header id="header">
-				<div id="header-inner">	
+				<div id="header-inner">
 					<div id="logo">
 						<h1 class="customfont"><a href="#">Squared<span>Software</span>London</a></h1>
+					</div>
+					<div id="top-nav">
+						<ul>
+                            <li><a href="https://squaredsoftware.github.io/about">About</a></li>
+							<li><a href="https://squaredsoftware.github.io/contact">Contact</a></li>
+							<li><a href="https://squaredsoftware.github.io/faq">FAQ</a></li>
+                            <li><a href="https://squaredsoftware.github.io/help">Help</a></li>
+						</ul>
 					</div>
 					<div class="clr"></div>
 				</div>
 			</header>
+			<div class="feature">
+				<div class="feature-inner">
+				<h1>About Us - Who Are We?</h1>
+				</div>
+			</div>
 			<div id="content">
 				<div id="content-inner">
 					<main id="contentbar">
 						<div class="article">
+							<p class="pw">Founded in 2017, Squared Software remains a small sized company driven to deliver high quality software to its clients.</p>
 							<div class="important-inner">
 								<div class="important-inner">
-								<h1>This website is still under development!</h1>
-								<h1>ETA End of Jan </h1>
+									<h1>Meet the Team</h1>
 								</div>
+							</div>
+							<br>
+							<div class="container">
+								<table cellpadding="15">
+									<tr>
+										<td>
+											<div class="decorationcontainer">
+												<img src="https://raw.githubusercontent.com/Jak3-02/squaredassets/master/user_image.png" alt="squared_logo" class="img2">
+												<p class="pu">Jake</p>
+											</div>
+										</td>
+										<td>
+											<div class="decorationcontainer2">
+												<p class="pq">Lead developer and partner at SSL.</p>
+											</div>
+											<br>
+											<div class="decorationcontainer2">
+												<p class="pi">Jake works on creating software, implementing new technolgies and leading the development.<br> <br> His work provides guidance to the company as to nurture growth in the right direction.</p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<br>
+							<div class="container">
+								<table cellpadding="15">
+									<tr>
+										<td>
+											<div class="decorationcontainer">
+												<img src="https://raw.githubusercontent.com/Jak3-02/squaredassets/master/user_image.png" alt="squared_logo" class="img2">
+												<p class="pu">Harry</p>
+											</div>
+										</td>
+										<td>
+											<div class="decorationcontainer2">
+												<p class="pq">Lead Advertiser, Head of Marketing and partner at SSL.</p>
+											</div>
+											<br>
+											<div class="decorationcontainer2">
+												<p class="pi">Harry creates advertisements for the company, effectively compressing essential information on latest developments within the company into short video segments. <br><br>These segments are then spread and governed by Harry through the use of Social Media</p>
+											</div>
+										</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 					</main>
 					
 					<nav id="sidebar">
 						<div class="widget">
-							<h3>Go back</h3>
+							<h3>Look around</h3>
 							<ul>
-                                <li><a href="https://squaredsoftware.github.io/welcome">Welcome</a></li>
+                                <li><a href="https://squaredsoftware.github.io/welcome#">Welcome</a></li>
                                 <li><a href="https://squaredsoftware.github.io/software">Software</a></li>
+                                <li><a href="https://squaredsoftware.github.io/upcoming">Upcoming</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -134,7 +217,7 @@
                             <li><a href="https://www.instagram.com/squaredsoftware/">Instagram</a></li>
                             <li><a href="https://www.twitter.com/squaredsoftwar1/">Twitter</a></li>
                             <li><a href="https://itsallwidgets.com/flutter-app/cryp-tick-exchange">It's All Widgets</a></li>
-                            <li><a href="file:///Users/jake/Desktop/squaredsite/reportanissue.html#">Report an Issue</a></li>
+                            <li><a href="https://squaredsoftware.github.io/reportanissue">Report an Issue</a></li>
                             </ul>
                         </div>
 					</div>	
