@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Squared Software</title>
-        <link rel="icon" href="https://raw.githubusercontent.com/Jak3-02/squaredassets/master/favcon.png">
+		<title>Squared Software</title>
+		<link rel="icon" href="https://raw.githubusercontent.com/Jak3-02/squaredassets/master/favcon.png">
 		<style type="text/css">
 			html, #page { padding:0; margin:0; background-color: #eee;}
 			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
@@ -136,6 +136,12 @@
 			}
 
 		</style>
+		<script>
+			var fname = "";
+			var sname = "";
+			var z = fname + " " + sname;
+			document.getElementById("final").innerHTML = "Data Recieved: " + z;
+		</script>
 	</head>
 	<body>
 		<div id="page">
@@ -166,7 +172,13 @@
 						<div class="article">
 							<div class="container2"></div>
 							<div class="container">
-								<form action="https://squaredsoftware.github.io/form_submit">
+								<form action="#">
+									<div class="important-inner">
+										<div class="important-inner">
+										<h1>Contact Form Under Construction</h1>
+										</div>
+									</div>
+									<br>
 									<label for="fname">* First Name</label>
 									<input type="text" id="fname" name="firstname" placeholder="Your name...">
 								
@@ -178,16 +190,17 @@
 								
 									<label for="country">Country</label>
 									<select id="country" name="country">
-									<option value="uk">United Kingdom</option>
-									<option value="usa">USA</option>
-									<option value="canada">Canada</option>
+										<option value="uk">United Kingdom</option>
+										<option value="usa">USA</option>
+										<option value="canada">Canada</option>
 									</select>
-								
+									
 									<label for="subject">Subject</label>
 									<textarea id="subject" name="subject" placeholder="Contact us..." style="height:200px"></textarea>
 
 									<input type="checkbox" name="tos" value="agree"> By contacting Squared Software you agree to abide by our terms of service, as defined by <a href="https://eugdpr.org/the-regulation/">GDPR</a><br><br>
-									<input type="submit" value="Submit"><br><br>
+									<input type="submit" value="Submit" onclick="alert()"><br><br>
+
 									<label>* marks a required value</label>
 								</form>
 							</div>
