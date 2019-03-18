@@ -1,1 +1,1 @@
-# squaredsoftware.github.io
+# squaredsoftware.github.i
