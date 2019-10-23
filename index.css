@@ -1,0 +1,142 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+.custombox {
+    width: 100px;
+    height: 75px;
+}
+.title {
+    font-family: Helvetica;
+    font-weight: 600;
+    font-size: 25px;
+}
+.title2 {
+    font-family: Helvetica;
+    font-size: 25px;
+    text-align: left;
+    color: #ffffff;
+    width: 750px;
+}
+.contenttext {
+    font-family: Helvetica;
+    font-size: 20px;
+}
+.titlebox {
+    width: 100%;
+    text-align: left;
+}
+.contentbox {
+    width: 100%;
+    text-align: center;
+}
+.bottombar {
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+.bottombottombar {
+    width: 100%;
+    height: 100px;
+    background: #d3d3d3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+.toptitlebar {
+    width: 100%;
+    height: 50px;
+    background: #d3d3d3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    background: #3b5998;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+    height: 50px;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+.top {
+    width: 150px;
+    height: 50px;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #ffffff;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+.bottom {
+    width: 310px;
+    height: 50px;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #ffffff;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+.top:hover{
+    width: 150px;
+    height: 50px;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #8b9dc3;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sqicon {
+    width: 50px;
+    height: 50px;
+}
+.name {
+    font-family: Helvetica;
+    font-size: 15px;
+}
+.navname {
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #ffffff;
+}
+.divider {
+    height: 50px;
+    width: 1px;
+    color: #ffffff;
+}
+.a {
+    text-decoration: none;
+}
