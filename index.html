@@ -1,0 +1,228 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Squared Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="travel recce" content="travel recce is an iOS app designed for the curation, and execution of the perfect day out.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="travel, free, ios, apple, app, beta, new, software">
+    <link rel='icon' href='https://raw.githubusercontent.com/jakesq/squaredassets/master/Icon-128.png' type='image/x-icon'>
+    <style>
+      @media only screen and (min-width: 200px) and (max-width: 767px) {
+        .paddedBody {
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        .centerContainer {
+          width: 100%;
+          text-align: center;
+        }
+        .topNavBar {
+          background-color: #3A3A3A;
+          padding-left: 20px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          height: 33.5px;
+        }
+        .scrollContainer {
+          width: 98%;
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          -ms-overflow-style: -ms-autohiding-scrollbar; 
+        }
+        .scrollItem {
+          flex: 0 0 auto; 
+          height: 135%;
+        }
+        .captionContainer {
+          padding: 5px;
+          width: 95%;
+          height: 65px;
+          border-radius: 15px;
+          background-color: #212121;
+          text-align: center;
+          float: right;
+        }
+        h1 {
+          color: white;
+          font-weight: 400;
+          font-size: 60px;
+          margin-bottom: 10px;
+          margin-top: 5px;
+          padding: 0px;
+          font-family: Helvetica, Arial, sans-serif;
+        }
+        .contentContainer {
+          width: 100%;
+        }
+        .content {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 800px) {
+        .paddedBody {
+          padding-left: 20px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .centerContainer {
+          width: 100%;
+        }
+        .topNavBar {
+          background-color: #3A3A3A;
+          padding-left: 20px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          height: 33.5px;
+        }
+        .scrollContainer {
+          width: 98%;
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          -ms-overflow-style: -ms-autohiding-scrollbar; 
+        }
+        .scrollItem {
+          flex: 0 0 auto; 
+          height: 75%;
+        }
+        .captionContainer {
+          padding: 5px;
+          width: 95%;
+          height: 43px;
+          border-radius: 15px;
+          background-color: #212121;
+          text-align: center;
+          float: right;
+        }
+        h1 {
+          color: white;
+          font-weight: 400;
+          font-size: 45px;
+          margin-bottom: 0px;
+          margin-top: 5px;
+          padding: 0px;
+          font-family: Helvetica, Arial, sans-serif;
+        }
+        .contentContainer {
+          width: 100%;
+          display: table;
+        }
+        .content {
+          display: table-cell;
+          width: 45%;
+        }
+      }
+      body {
+        background-color: black;
+        padding: 0px;
+        margin: 0;
+      }
+      h2 {
+        color: white;
+        font-weight: 400;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      h3 {
+        color: grey;
+        font-weight: 200;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      h5 {
+        color: grey;
+        font-weight: 200;
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        padding: 0px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      img {
+        border: 2px solid white;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+      ul {
+        padding-left: 30px;
+      }
+      li {
+        color: white;
+      }
+      .container {
+        padding-left: 5px;
+      }
+      .containerDivider {
+        width: 100px;
+        height: 2px;
+        border-radius: 5px;
+        background-color: grey;
+      }
+      .customRow {
+        display: table;
+        table-layout: fixed; /*Optional*/
+      }
+      .customColumn {
+        padding-left: 10px;
+        display: table-cell;
+      }
+      video {
+        width: 100%;
+        height: 94%;
+      }
+      .betaButton {
+        background-color: #2096F3;
+        color: white;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 10px;
+        width: 310px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 25px;
+      }
+      .guideButton {
+        background-color: #8EC96F;
+        color: white;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 10px;
+        width: 310px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 25px;
+      }
+			button:hover {
+				background-color: grey;
+				color: white;
+			}
+    </style>
+  </head>
+  <body>
+    <div class="centerContainer">
+      <div class="topNavBar">
+        <img src="https://raw.githubusercontent.com/travelrecce/travelrecce.github.io/master/assets/images/image_small.png"></img>
+        <img src="assets/images/tr.png"></img>
+      </div>
+    </div>
+    <video>
+      <source src="assets/videos/sqtypewriter.mp4" type="video/mp4">
+    </video>
+  </body>
+</html>
