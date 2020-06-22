@@ -48,11 +48,21 @@
         h1 {
           color: white;
           font-weight: 400;
-          font-size: 60px;
-          margin-bottom: 10px;
-          margin-top: 5px;
-          padding: 0px;
+          font-size: 35px;
+          margin-bottom: 15px;
+          margin-top: 0px;
+          padding: 5px;
+          width: 100%;
           font-family: Helvetica, Arial, sans-serif;
+          background-color: black;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+          filter: alpha(opacity=50);  /* IE 5-7 */
+          -moz-opacity: 0.5;          /* Netscape */
+          -khtml-opacity: 0.5;        /* Safari 1.x */
+          opacity: 0.5;               /* Other */
+          position: absolute;
+          top: 0;
+          left: 0;
         }
         .contentContainer {
           width: 100%;
@@ -106,7 +116,17 @@
           margin-bottom: 0px;
           margin-top: 5px;
           padding: 0px;
+          width: 100%;
           font-family: Helvetica, Arial, sans-serif;
+          background-color: black;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+          filter: alpha(opacity=50);  /* IE 5-7 */
+          -moz-opacity: 0.5;          /* Netscape */
+          -khtml-opacity: 0.5;        /* Safari 1.x */
+          opacity: 0.5;        
+          position: absolute;
+          top: 0;
+          left: 20px;
         }
         .contentContainer {
           width: 100%;
@@ -118,9 +138,6 @@
         }
       }
       body {
-        background-image: url("https://raw.githubusercontent.com/squaredsoftware/squaredsoftware.github.io/master/assets/images/sq_background.png");
-        background-size: 100vw;
-        background-repeat: no-repeat;
         background-color: black;
         padding: 0px;
         margin: 0;
@@ -151,6 +168,9 @@
         margin-bottom: 15px;
         padding: 0px;
         font-family: Helvetica, Arial, sans-serif;
+      }
+      video {
+        position: relative;
       }
       img {
         border: 2px solid white;
@@ -211,6 +231,15 @@
 				background-color: grey;
 				color: white;
 			}
+      .videoFrame {
+        position: relative;
+        text-align: center;
+      }
+      .h1Container {
+        width: 100%;
+        background-color: black;
+        filter: alpha(opacity=50); 
+      }
     </style>
   </head>
   <body>
@@ -220,6 +249,13 @@
         <a href="https://travelrecce.com/"><img src="assets/images/tr.png"></img></a>
       </div>
     </div>
-    <video src="assets/videos/sqtypewriter.mp4" type="video/mp4" width="100%" autoplay preload="metadata" loop muted playsinline></video>
+    <div class="paddedBody">
+      <div class="centerContainer">
+        <div class="videoFrame">
+          <video src="https://raw.githubusercontent.com/squaredsoftware/squaredsoftware.github.io/master/assets/videos/sqtypewriter.mp4" type="video/mp4" width="100%" autoplay preload="metadata" muted playsinline></video>
+          <h1>welcome to squared software</h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
